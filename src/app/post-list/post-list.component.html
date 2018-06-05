@@ -8,7 +8,12 @@
 
   contains :
   <div >
-      <app-post-list-item  *ngFor="let i of tableau" [texte]="welcome neo"></app-post-list-item>
+      <!--<app-post-list-item *ngFor="let i of tableau" [titre]="i.st"></app-post-list-item>-->
+      <app-post-list-item *ngFor="let i of postArray"
+        [titre]="i.title"
+        [date]="i.created_at"
+        [contenu]="i.content"
+        [likeCompute]="i.loveIts"></app-post-list-item>
   </div>
   
 </div>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
+import { Post } from '../Post';
+import { postArray } from '../post_array'
 
 @Component({
   selector: 'app-post-list',
@@ -7,11 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostListComponent implements OnInit {
 
-  tableau = [
-    {name : "un"},
-    {name :"deux"},
-    {name : "trois"}
-  ]
+  @Input() postArray : Post[] = postArray;
     
   constructor() { }
 

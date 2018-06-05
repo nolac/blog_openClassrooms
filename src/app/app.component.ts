@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Post } from './Post';
+import { postArray } from './post_array'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import { Post } from './Post';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  ctt="bienvenue sur mon super post super intelligent qui ne dit strictement rien et que tu ne peuc meme pas troller ";
-  wlc = new Post("hello",this.ctt,new Date());
-  title = 'app';
+  post : Post[];
+
+  constructor(){
+    this.post=postArray;
+    console.log(this.post);
+  }
 }

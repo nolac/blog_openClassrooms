@@ -1,5 +1,33 @@
-p{
-    background-color: grey;
-    margin: 30px;
-    border: solid;
+.container-post-content{
+    border: groove;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.post-content{
+    margin : 30px 20px;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.title{
+    text-align: left;
+    width: auto;
+    margin-left: 20px;
+   }
+
+.date{
+    text-align: right;
+    width: auto;
+}
+
+h4{
+    display: inline;
+    font-style: bold;
 }

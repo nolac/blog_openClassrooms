@@ -3,6 +3,16 @@
   contient donc uniquement ce qui définit 1 post
 -->
 
-<p>
-  post-list-item works! {{textAfficher}}
-</p>
+<div class="container-post-content">
+  <div class="post-header">
+    <div class="title"><h4>sujet : </h4>{{titre}}</div>
+    <div class="date">date {{date | date:'short'}}</div>
+  </div>
+  <div class="post-content">
+    <h3>contenu du post :</h3>
+    {{contenu}}
+  </div>
+  <button>like</button>
+  <button>dont like</button>
+  <span>{{likeCompute}}</span>
+</div>

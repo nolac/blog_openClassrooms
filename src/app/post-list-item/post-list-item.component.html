@@ -11,10 +11,11 @@
     <div class="date">date {{date | date:'short'}}</div>
   </div>
   <div class="post-content">
-    <h3>contenu du post :</h3>
+    <!--<h3>contenu du post :</h3>-->
     {{contenu}}
   </div>
-  <button (click)="onLike()">like</button>
   <button (click)="onUnlike()">dont like</button>
+  <button (click)="onLike()">like</button>
+  
   <!--<span>{{likeCompute}}</span>-->
 </div>

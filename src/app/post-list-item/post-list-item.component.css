@@ -1,7 +1,16 @@
 .container-post-content{
     border: groove;
+    box-shadow: 5px 5px 5px grey;
     border-radius: 5px;
     margin: 10px 20px;
+}
+
+.liked{
+    background-color: rgba(100, 200, 100, 0.6)
+}
+
+.unliked{
+    background-color: rgba(200, 100, 100, 0.6)
 }
 
 .post-content{

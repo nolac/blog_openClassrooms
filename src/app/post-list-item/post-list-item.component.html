@@ -3,7 +3,9 @@
   contient donc uniquement ce qui définit 1 post
 -->
 
-<div class="container-post-content">
+<div [ngClass]="{ 'container-post-content':true,
+                    'liked':likeCompute>0,
+                    'unliked':likeCompute<0}">
   <div class="post-header">
     <div class="title"><h4>sujet : </h4>{{titre}}</div>
     <div class="date">date {{date | date:'short'}}</div>
@@ -12,7 +14,7 @@
     <h3>contenu du post :</h3>
     {{contenu}}
   </div>
-  <button>like</button>
-  <button>dont like</button>
-  <span>{{likeCompute}}</span>
+  <button (click)="onLike()">like</button>
+  <button (click)="onUnlike()">dont like</button>
+  <!--<span>{{likeCompute}}</span>-->
 </div>
